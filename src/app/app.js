@@ -1,5 +1,4 @@
-const alertService = new AlertService();
-const componentService = new ComponentService();
+import { parseInputs } from "./utils/parseInputs";
 
 const run = (alertService, componentService) => {
   alertService.hideErrors();
@@ -19,4 +18,4 @@ const run = (alertService, componentService) => {
   });
 };
 
-run(alertService, componentService);
+export default run;

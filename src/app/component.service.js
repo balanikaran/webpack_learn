@@ -18,3 +18,5 @@ class ComponentService {
     this.addValuesBtn.addEventListener("click", callBackFn);
   }
 }
+
+export default ComponentService;
