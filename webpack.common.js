@@ -18,6 +18,14 @@ module.exports = {
           "sass-loader", // 1. Turns SCSS into normal CSS
         ],
       },
+      {
+        test: /\.html$/,
+        use: ["html-loader"],
+      },
+      {
+        test: /\.(svg|png|jpe?g|gif)$/i,
+        type: "asset/resource", // this eliminates the need of file-loader
+      },
     ],
   },
 };
